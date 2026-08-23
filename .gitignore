@@ -15,6 +15,9 @@ build/
 # Logs
 *.log
 
+#Dirs
+pictures
+
 # OS files
 .DS_Store
 Thumbs.db
