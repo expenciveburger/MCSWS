@@ -16,7 +16,7 @@ build/
 *.log
 
 #Dirs
-pictures
+#pictures
 
 # OS files
 .DS_Store
