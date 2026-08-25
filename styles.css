@@ -1,20 +1,16 @@
-h1 {
+.helloServer {
     color: cornflowerblue; 
-
-    font-size: 60px; 
     font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
+    font-size: 60px; 
     font-style: normal;
-
     text-align: center;
 }
-h3 {
-    text-align: center; 
-
+.burgercraft {
     font-family: "Saira", sans-serif;
     font-size: 25px;
     font-weight: 600;
     line-height: 110%;
+    text-align: center; 
 
     border-color: cornflowerblue;
     border-style: solid; 
@@ -23,7 +19,6 @@ h3 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-width: 4px;
-
     border-block-end-width: 10px;
     border-block-start-width: 2px;
 
@@ -31,4 +26,21 @@ h3 {
     padding-top: 8px;
     margin-left: 200px;
     margin-right: 200px;
+}
+.worldMapLink {
+    color: blueviolet; 
+    font-size: 20px; 
+    text-align: center;
+}
+.mapLinkImage {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.smileyImage {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
 }
