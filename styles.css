@@ -1,5 +1,5 @@
 a:link {
-  color: rgb(0, 146, 146);
+  color: rgb(0, 61, 70);
   background-color: transparent;
   text-decoration: none;
 }
@@ -61,13 +61,9 @@ body {
 .worldMapLink { 
     font-size: 20px; 
     text-align: center;
-}
-
-.mapLinkImage {
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 200px;
+    background-image: url("pictures/house.png");
+    padding-top: 140px;
+    padding-bottom: 20px;
 }
 
 .kittyGIF {
