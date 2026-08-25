@@ -47,11 +47,6 @@ a:active {
     border-width: 4px;
     border-block-end-width: 10px;
     border-block-start-width: 2px;
-
-    padding-bottom: 8px;
-    padding-top: 8px;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 body {
@@ -72,3 +67,30 @@ body {
     width: 200px;
     height: 200px;
 }
+
+.modsTableCaption {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center; 
+}
+
+.modsTable {
+    border-collapse: collapse;
+    border: 3px solid rgb(140 140 140);
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center; 
+}
+
+th,
+td {
+    border: 2px solid rgb(140 140 140);
+    padding: 7px;
+}
+
