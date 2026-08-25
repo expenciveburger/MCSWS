@@ -1,3 +1,27 @@
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(98, 0, 107);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 146, 146);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .helloServer {
     color: cornflowerblue; 
     font-family: "Source Code Pro", monospace;
@@ -5,6 +29,7 @@
     font-style: normal;
     text-align: center;
 }
+
 .burgercraft {
     font-family: "Saira", sans-serif;
     font-size: 25px;
@@ -27,17 +52,20 @@
     margin-left: 200px;
     margin-right: 200px;
 }
+
 .worldMapLink {
     color: blueviolet; 
     font-size: 20px; 
     text-align: center;
 }
+
 .mapLinkImage {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     width: 200px;
     height: 200px;
 }
+
 .smileyImage {
     display: block;
     margin: 0 auto;
