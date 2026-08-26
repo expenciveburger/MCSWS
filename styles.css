@@ -1,5 +1,5 @@
 a:link {
-  color: rgb(0, 61, 70);
+  color: rgb(0, 99, 114);
   background-color: transparent;
   text-decoration: none;
 }
@@ -57,6 +57,8 @@ body {
     font-size: 20px; 
     text-align: center;
     background-image: url("pictures/house.png");
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 140px;
     padding-bottom: 20px;
 }
@@ -68,7 +70,7 @@ body {
     height: 200px;
 }
 
-.modsTableCaption {
+.modsTable_Caption {
     color: rgb(255, 171, 93);
     font-family: "Saira", sans-serif;
     font-size: 20px;
@@ -77,20 +79,45 @@ body {
     text-align: center; 
 }
 
-.modsTable {
-    border-collapse: collapse;
-    border: 3px solid rgb(140 140 140);
+.modsTable_Head,
+.modsTable_ModColon,
+.modsTable_PlatformColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
     color: rgb(255, 171, 93);
     font-family: "Saira", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 100%;
     text-align: center; 
+    border-radius: 15px;
 }
 
-th,
-td {
+.modsTable_ModColon,
+.modsTable_PlatformColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
     border: 2px solid rgb(140 140 140);
     padding: 7px;
 }
 
+.modsTable_Head{
+    border: 3px solid rgb(140 140 140);
+    padding: 4px;
+}
+
+.modsTable_HighPriority{
+    background-color: rgb(83, 22, 22);
+}
+
+.modsTable_ModeratePriority{
+    background-color: rgb(90, 86, 24);
+}
+
+.modsTable_LowPriority{
+    background-color: rgb(15, 58, 22);
+}
