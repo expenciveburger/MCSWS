@@ -79,6 +79,12 @@ body {
     text-align: center; 
 }
 
+.modsTable {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
 .modsTable_Head,
 .modsTable_ModColon,
 .modsTable_PlatformColon,
@@ -102,7 +108,21 @@ body {
 .modsTable_ModeratePriority,
 .modsTable_LowPriority {
     border: 2px solid rgb(140 140 140);
+}
+
+.modsTable_ModColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
     padding: 7px;
+}
+
+.modsTable_PlatformColon {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .modsTable_Head{
@@ -121,3 +141,4 @@ body {
 .modsTable_LowPriority{
     background-color: rgb(15, 58, 22);
 }
+
