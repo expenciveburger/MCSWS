@@ -26,20 +26,12 @@ body {
     background-color: rgb(39, 25, 8);
 }
 
-.helloServer {
-    color: cornflowerblue; 
-    font-family: "Source Code Pro", monospace;
-    font-size: 60px; 
-    font-style: normal;
-    text-align: center;
-}
-
 .burgercraft {
     color: rgb(255, 171, 93);
     font-family: "Saira", sans-serif;
     font-size: 25px;
     font-weight: 600;
-    line-height: 110%;
+    line-height: 0px;
     text-align: center; 
 
     border-color: cornflowerblue;
@@ -51,6 +43,19 @@ body {
     border-width: 4px;
     border-block-end-width: 10px;
     border-block-start-width: 2px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.burgercraft_Mini {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0px;
+    text-align: center; 
+    letter-spacing: 5px;
 }
 
 .worldMapLink-N-KittyGIF_div {
