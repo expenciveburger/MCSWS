@@ -53,6 +53,16 @@ body {
     border-block-start-width: 2px;
 }
 
+.worldMapLink-N-KittyGIF_div {
+    width: 100%;
+    overflow: auto;
+}
+
+.worldMapLink-N-KittyGIF_div div{
+    width: 50%;
+    float: left;
+}
+
 .worldMapLink { 
     font-size: 20px; 
     text-align: center;
@@ -76,6 +86,15 @@ body {
     font-size: 20px;
     font-weight: 600;
     line-height: 100%;
+    text-align: center; 
+}
+
+.modsTable_CaptionMini {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10%;
     text-align: center; 
 }
 
