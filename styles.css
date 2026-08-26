@@ -22,6 +22,10 @@ a:active {
   text-decoration: underline;
 }
 
+body {
+    background-color: rgb(39, 25, 8);
+}
+
 .helloServer {
     color: cornflowerblue; 
     font-family: "Source Code Pro", monospace;
@@ -47,10 +51,6 @@ a:active {
     border-width: 4px;
     border-block-end-width: 10px;
     border-block-start-width: 2px;
-}
-
-body {
-    background-color: rgb(39, 25, 8);
 }
 
 .worldMapLink { 
