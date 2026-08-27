@@ -59,13 +59,8 @@ body {
 }
 
 .worldMapLink-N-KittyGIF_div {
-    width: 100%;
-    overflow: auto;
-}
-
-.worldMapLink-N-KittyGIF_div div{
-    width: 50%;
-    float: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .worldMapLink { 
