@@ -1,0 +1,172 @@
+a:link {
+  color: rgb(0, 99, 114);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(98, 0, 107);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 146, 146);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {
+    background-color: rgb(39, 25, 8);
+}
+
+.burgercraft,
+.worldMapLink,
+.kittyGIF {
+    transition: .3s cubic-bezier(0,0,0.5,1);
+}
+
+.burgercraft:hover,
+.worldMapLink:hover,
+.kittyGIF:hover {
+    scale: 1.05;
+}
+
+.burgercraft {
+    display: block;
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 0px;
+    text-align: center; 
+    height: 80px;
+    width: 350px;
+    margin: 0 auto;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.burgercraft_Mini {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0px;
+    text-align: center; 
+    letter-spacing: 5px;
+}
+
+.worldMapLink-N-KittyGIF_div {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.worldMapLink { 
+    font-size: 20px; 
+    text-align: center;
+    background-image: url("pictures/house.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+
+.kittyGIF {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    padding-top: 35px;
+}
+
+.modsTable_Caption {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center; 
+}
+
+.modsTable_CaptionMini {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10%;
+    text-align: center; 
+}
+
+.modsTable {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
+.modsTable_Head,
+.modsTable_ModColon,
+.modsTable_PlatformColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
+    color: rgb(255, 171, 93);
+    font-family: "Saira", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center; 
+    border-radius: 15px;
+}
+
+.modsTable_ModColon,
+.modsTable_PlatformColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
+    border: 2px solid rgb(140 140 140);
+}
+
+.modsTable_ModColon,
+.modsTable_LinkColon,
+.modsTable_HighPriority,
+.modsTable_ModeratePriority,
+.modsTable_LowPriority {
+    padding: 7px;
+}
+
+.modsTable_PlatformColon {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modsTable_Head{
+    border: 3px solid rgb(140 140 140);
+    padding: 4px;
+}
+
+.modsTable_HighPriority{
+    background-color: rgb(83, 22, 22);
+}
+
+.modsTable_ModeratePriority{
+    background-color: rgb(90, 86, 24);
+}
+
+.modsTable_LowPriority{
+    background-color: rgb(15, 58, 22);
+}
+
