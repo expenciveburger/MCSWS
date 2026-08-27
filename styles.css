@@ -26,23 +26,29 @@ body {
     background-color: rgb(39, 25, 8);
 }
 
+.burgercraft,
+.worldMapLink,
+.kittyGIF {
+    transition: .3s cubic-bezier(0,0,0.5,1);
+}
+
+.burgercraft:hover,
+.worldMapLink:hover,
+.kittyGIF:hover {
+    scale: 1.05;
+}
+
 .burgercraft {
+    display: block;
     color: rgb(255, 171, 93);
     font-family: "Saira", sans-serif;
     font-size: 25px;
     font-weight: 600;
     line-height: 0px;
     text-align: center; 
-
-    border-color: cornflowerblue;
-    border-style: solid; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-width: 4px;
-    border-block-end-width: 10px;
-    border-block-start-width: 2px;
+    height: 80px;
+    width: 350px;
+    margin: 0 auto;
     
     padding-top: 20px;
     padding-bottom: 20px;
@@ -60,7 +66,9 @@ body {
 
 .worldMapLink-N-KittyGIF_div {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 200px 200px;
+    gap: 50px;
+    justify-content: center;
 }
 
 .worldMapLink { 
@@ -78,6 +86,7 @@ body {
     margin: 0 auto;
     width: 200px;
     height: 200px;
+    padding-top: 35px;
 }
 
 .modsTable_Caption {
