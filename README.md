@@ -1,1 +1,1 @@
-This is github repositort of my minecraft server project. This is my first project of this type
+This is github repository of my minecraft server project. This is my first project of this type
