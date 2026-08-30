@@ -1,0 +1,15 @@
+:root {
+    --background-color: rgb(27 27 35);
+    --accent-color: #8B5CF6
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    width: 100px;
+    height: 400vh;
+}
+
+
