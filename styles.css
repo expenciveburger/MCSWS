@@ -5,6 +5,8 @@
     --font-size-title-large: 80px;
     --font-sourceCodePro: "Source Code Pro", monospace;
     --size-border-title: 20px;
+    --size-title-width: 550px;
+    --size-title-height: 120px;
     --radius-border-title: 32px;
     --element-hover-transition: .4s ease-in-out;
     --element-hover-scale: 1.05;
@@ -26,14 +28,14 @@ main {
 }
 */
 
-.card {
+.card-burgercraft {
     margin: 0 auto;
     position: relative;
     top: 164px;
     width: 614px;
 }
 
-.overlay {
+.card-burgercraft-overlay {
     top: 16px;
     left: 16px;
     display: flex;
@@ -47,7 +49,7 @@ main {
     background-color: var(--color-accent);
 }
 
-.backCard {
+.card-burgercraft-backCard {
     top: 15px;
     left: 15px;
     display: block;
@@ -58,18 +60,18 @@ main {
     box-shadow: 0px 0px 50px var(--color-glow);
 }
 
-.overlay,
-.backCard {
+.card-burgercraft-overlay,
+.card-burgercraft-backCard {
     position: absolute;
     transition: var(--element-hover-transition)
 }
 
-.card:hover > .overlay,
-.card:hover > .backCard {
+.card-burgercraft:hover > .card-burgercraft-overlay,
+.card-burgercraft:hover > .card-burgercraft-backCard {
     scale: var(--element-hover-scale)
 }
 
-.helloWorld {
+.card-burgercraft-text {
     font-family: var(--font-sourceCodePro);
     font-size: var(--font-size-title-large);
 }
