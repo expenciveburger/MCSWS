@@ -19,13 +19,14 @@ main {
     display: block;
     height: 400vh;
     cursor: url(pictures/mccursor.svg) 15 15, auto;
-
+    animation: scroll linear;
+    animation-timeline: scroll();
 }
 
 .card-burgercraft__setup {
     display: block;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 400px;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
 }
@@ -47,6 +48,9 @@ main {
     align-items: center;
     background-color: var(--accent-color);
     transition: var(--element-hover-transition);
+    animation-range-start: 0%;
+    animation-range-end: 10%;
+    animation-timeline: scroll();
 }
 
 .card-burgercraft:hover {
@@ -80,7 +84,7 @@ main {
     position: absolute;
     border-radius: var(--burgercraft-border-radius);
     box-shadow: 0 0 65px 25px rgb(139 92 246);
-    animation: 5s ease-in-out glow-animation-big infinite;
+    animation: 5s ease-in-out --glow-animation-big infinite;
 }
 
 .card-burgercraft__glow-small {
@@ -89,7 +93,7 @@ main {
     position: absolute;
     border-radius: var(--burgercraft-border-radius);
     box-shadow: 0 0 25px 15px rgb(139 92 246);
-    animation: 5s ease-in-out glow-animation-small infinite;
+    animation: 5s ease-in-out --glow-animation-small infinite;
 }
 
 .card-burgercraft__glow {
@@ -103,7 +107,7 @@ main {
     font-size: var(--burgercraft-font-size);
 }
 
-@keyframes glow-animation-big {
+@keyframes --glow-animation-big {
     0% {
         opacity: 100%;
     }
@@ -115,7 +119,7 @@ main {
     }
 }
 
-@keyframes glow-animation-small {
+@keyframes --glow-animation-small {
     0% {
         opacity: 0%;
     }
@@ -125,4 +129,19 @@ main {
     100% {
         opacity: 0%;
     }
+}
+
+
+@keyframes scroll {
+    0% {
+        opacity: 100%;
+        margin-top: 400px;
+    }   
+    9% {
+        opacity: 0%;
+        margin-top: 700px;
+    }
+    10% {
+        margin-top: -400px;
+    }    
 }
