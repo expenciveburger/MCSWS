@@ -1,79 +1,128 @@
 :root {
-    --color-background: rgb(27 27 35);
-    --color-accent: #8B5CF6;
-    --color-glow: #8a65ed;
-    --font-size-title-large: 80px;
     --font-sourceCodePro: "Source Code Pro", monospace;
-    --size-border-title: 20px;
-    --size-card-burgercraft-width: 550px;
-    --size-card-burgercraft-height: 120px;
-    --radius-border-title: 32px;
+    --background-color: rgb(27 27 35);
+    --accent-color: rgb(139 92 246);
+    --burgercraft-width: 590px;
+    --burgercraft-height: 120px;
+    --burgercraft-font-size: 80px;
+    --burgercraft-border-size: 20px;
+    --burgercraft-border-radius: 30px;
     --element-hover-transition: .4s ease-in-out;
     --element-hover-scale: 1.05;
 }
 
 body {
-    background-color: var(--color-background);
+    background-color: var(--background-color);
 }
 
-/*
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 90vw;
+    display: block;
     height: 400vh;
-    animation: 1s cubic-bezier(0.4, 0, 0.4, 1);
+    cursor: url(pictures/mccursor.svg) 15 15, auto;
 
-cursor: url(pictures/mccursor.svg), auto;
 }
-*/
+
+.card-burgercraft__setup {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+}
+
+.card-burgercraft,
+.card-burgercraft__glow {
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    border-radius: var(--burgercraft-border-radius);
+}
 
 .card-burgercraft {
-    margin: 0 auto;
-    position: relative;
-    top: 164px;
-    width: 614px;
-}
-
-.card-burgercraft-overlay {
-    top: 16px;
-    left: 16px;
+    box-shadow:
+        0 0 25px rgb(130 90 230 / 0.6),
+        inset 0 2px 3px rgb(255 255 255 / 0.35),
+        inset 0 -3px 3px rgb(0 0 0 / 0.45);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--size-card-burgercraft-width);
-    height: var(--size-card-burgercraft-height);
-    filter: blur(2px);
-    border: var(--size-border-title) solid rgba(0, 0, 0, 0);
-    border-radius: 30px;
-    background-color: var(--color-accent);
+    background-color: var(--accent-color);
+    transition: var(--element-hover-transition);
 }
 
-.card-burgercraft-backCard {
-    top: 14px;
-    left: 15px;
-    display: block;
-    width: calc(var(--size-card-burgercraft-width) + 2px);
-    height: calc(var(--size-card-burgercraft-height) + 2px);
-    border: var(--size-border-title) solid rgba(10, 10, 10, 0.3);
-    border-radius: var(--radius-border-title);
-    box-shadow: 0px 0px 50px var(--color-glow);
+.card-burgercraft:hover {
+    scale: var(--element-hover-scale);
 }
 
-.card-burgercraft-overlay,
-.card-burgercraft-backCard {
+.card-burgercraft__blur{
+    height: var(--burgercraft-height);
+    width: var(--burgercraft-width);
+    position: relative;
+    inset: 0;
+    border-radius: 10px;
+    background: rgb(255 255 255 / 0.2);
+    backdrop-filter: blur(1px);
+}
+
+.card-burgercraft__border {
     position: absolute;
-    transition: var(--element-hover-transition)
+    height: var(--burgercraft-height);
+    width: var(--burgercraft-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--burgercraft-border-size) solid rgb(0 0 0 / 0.3);
+    border-radius: var(--burgercraft-border-radius);
 }
 
-.card-burgercraft:hover > .card-burgercraft-overlay,
-.card-burgercraft:hover > .card-burgercraft-backCard {
-    scale: var(--element-hover-scale)
+.card-burgercraft__glow-big {
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    position: absolute;
+    border-radius: var(--burgercraft-border-radius);
+    box-shadow: 0 0 65px 25px rgb(139 92 246);
+    animation: 5s ease-in-out glow-animation-big infinite;
 }
 
-.card-burgercraft-text {
+.card-burgercraft__glow-small {
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    position: absolute;
+    border-radius: var(--burgercraft-border-radius);
+    box-shadow: 0 0 25px 15px rgb(139 92 246);
+    animation: 5s ease-in-out glow-animation-small infinite;
+}
+
+.card-burgercraft__glow {
+    position: absolute;
+    border-radius: inherit;
+}
+
+.card-burgercraft__text {
+    position: absolute;
     font-family: var(--font-sourceCodePro);
-    font-size: var(--font-size-title-large);
-}   
+    font-size: var(--burgercraft-font-size);
+}
+
+@keyframes glow-animation-big {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes glow-animation-small {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
