@@ -25,7 +25,7 @@ main {
     width: 90vw;
     height: 400vh;
     animation: 1s cubic-bezier(0.4, 0, 0.4, 1);
-    
+
 cursor: url(pictures/mccursor.svg), auto;
 }
 */
@@ -76,4 +76,4 @@ cursor: url(pictures/mccursor.svg), auto;
 .card-burgercraft-text {
     font-family: var(--font-sourceCodePro);
     font-size: var(--font-size-title-large);
-}
+}   
