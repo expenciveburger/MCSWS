@@ -22,55 +22,19 @@ main {
     animation-timeline: scroll();
 }
 
-/*                                                                                  Global things start ->>>
+/*                                                                                  Hover animations
 */
 
 .element-hover-animation:hover {
     scale: var(--element-hover-scale);
 }
+
 .element-hover-animation {
     transition: var(--element-hover-transition);
 }
 
-.animation-timeline {
-    animation: --scroll_burgerlogo-small ease-in-out both;
-    animation-timeline: scroll();
-}
-
-.cute-box-shadows {
-    box-shadow:
-        0 0 25px rgb(130 90 230 / 0.6),
-        inset 0 2px 3px rgb(255 255 255 / 0.35),
-        inset 0 -3px 3px rgb(0 0 0 / 0.45);
-}
-
-.element-blur {
-    inset: 0;
-    background: rgb(255 255 255 / 0.2);
-    backdrop-filter: blur(1px);
-}
-
-.glow-big {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    box-shadow: 0 0 65px 25px rgb(139 92 246);
-    animation: 5s ease-in-out --glow-animation-big infinite;
-}
-
-.glow-small {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    box-shadow: 0 0 25px 15px rgb(139 92 246);
-    animation: 5s ease-in-out --glow-animation-small infinite;
-}
-
-/*                                                                                  Global things start end <<<-
-*/
 /*                                                                                  Burgercraft logo start ->>>
 */
-
 .burgercraft-logo {
     display: flex;
     justify-content: center;
@@ -85,6 +49,8 @@ main {
     position: fixed;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    animation: --scroll_burgerlogo-small ease-in-out both;
+    animation-timeline: scroll();
     transform-origin: center center;
 }
 
@@ -94,6 +60,8 @@ main {
     margin-top: 400px;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    animation: --scroll_burgerlogo-big ease-in-out both;
+    animation-timeline: scroll();
     transform-origin: center center;
 }
 
@@ -105,10 +73,15 @@ main {
 }
 
 .card-burgercraft {
-    background-color: var(--accent-color);
+    box-shadow:
+        0 0 25px rgb(130 90 230 / 0.6),
+        inset 0 2px 3px rgb(255 255 255 / 0.35),
+        inset 0 -3px 3px rgb(0 0 0 / 0.45);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--accent-color);
+    transition: var(--element-hover-transition);
 }
 
 
@@ -116,7 +89,10 @@ main {
     height: var(--burgercraft-height);
     width: var(--burgercraft-width);
     position: relative;
+    inset: 0;
     border-radius: 10px;
+    background: rgb(255 255 255 / 0.2);
+    backdrop-filter: blur(1px);
 }
 
 .card-burgercraft__border {
@@ -133,9 +109,22 @@ main {
 /*                                                                                  Burgercraft Glow start ->>>
 */
 
-.card-burgercraft__glow-big,
-.card-burgercraft__glow-small {
+.card-burgercraft__glow-big {
+    height: inherit;
+    width: inherit;
+    position: absolute;
     border-radius: var(--burgercraft-border-radius);
+    box-shadow: 0 0 65px 25px rgb(139 92 246);
+    animation: 5s ease-in-out --glow-animation-big infinite;
+}
+
+.card-burgercraft__glow-small {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-radius: var(--burgercraft-border-radius);
+    box-shadow: 0 0 25px 15px rgb(139 92 246);
+    animation: 5s ease-in-out --glow-animation-small infinite;
 }
 
 .card-burgercraft__glow {
