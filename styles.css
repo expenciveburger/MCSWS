@@ -16,25 +16,46 @@ body {
 }
 
 main {
-    display: block;
-    height: 400vh;
+    display: flex;
+    height: 500vh;
     cursor: url(pictures/mccursor.svg) 15 15, auto;
-    animation: scroll linear;
     animation-timeline: scroll();
 }
 
-.card-burgercraft__setup {
-    display: block;
+.burgercraft-logo {
+    display: flex;
+    justify-content: center;
+/*    align-items: center;*/
+    width: 1920px;
+    height: 1080px;
+}
+
+.card-burgercraft-fixed__setup {
+    position: fixed;
+    display: flex;
+    position: fixed;
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    animation: --scroll_burgerlogo-small ease-in-out both;
+    animation-timeline: scroll();
+    transform-origin: center center;
+}
+
+.card-burgercraft-hero__setup {
+    display: flex;
     margin: 0 auto;
     margin-top: 400px;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    animation: --scroll_burgerlogo-big ease-in-out both;
+    animation-timeline: scroll();
+    transform-origin: center center;
 }
 
 .card-burgercraft,
 .card-burgercraft__glow {
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    height: inherit;
+    width: inherit;
     border-radius: var(--burgercraft-border-radius);
 }
 
@@ -48,9 +69,6 @@ main {
     align-items: center;
     background-color: var(--accent-color);
     transition: var(--element-hover-transition);
-    animation-range-start: 0%;
-    animation-range-end: 10%;
-    animation-timeline: scroll();
 }
 
 .card-burgercraft:hover {
@@ -79,8 +97,8 @@ main {
 }
 
 .card-burgercraft__glow-big {
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    height: inherit;
+    width: inherit;
     position: absolute;
     border-radius: var(--burgercraft-border-radius);
     box-shadow: 0 0 65px 25px rgb(139 92 246);
@@ -88,8 +106,8 @@ main {
 }
 
 .card-burgercraft__glow-small {
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
+    height: inherit;
+    width: inherit;
     position: absolute;
     border-radius: var(--burgercraft-border-radius);
     box-shadow: 0 0 25px 15px rgb(139 92 246);
@@ -132,16 +150,39 @@ main {
 }
 
 
-@keyframes scroll {
+@keyframes --scroll_burgerlogo-big {
     0% {
-        opacity: 100%;
-        margin-top: 400px;
-    }   
-    9% {
-        opacity: 0%;
-        margin-top: 700px;
+        opacity: 1;
+        scale: 1;
     }
-    10% {
-        margin-top: -400px;
-    }    
+    9% {
+        opacity: 0;
+        scale: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes --scroll_burgerlogo-small {
+    0% {
+        opacity: 0;
+        scale: 0.3;    
+    }
+    9% {
+        opacity: 0;
+        scale: 0.3;
+    }
+    18% {
+        opacity: 0.9;
+        scale: 0.38;
+    }
+    20% {
+        opacity: 1;
+        scale: 0.4;
+    }
+    100% {
+        opacity: 1;
+        scale: 0.4;
+    }
 }
