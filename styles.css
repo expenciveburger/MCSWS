@@ -42,7 +42,7 @@ header {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 
-/*                                                                                  Global Things start ->>>
+/*                                     Global Things start ->>>
 */
 
 .test-background-white {
@@ -98,7 +98,7 @@ header {
         inset 0 -3px 3px rgb(0 0 0 / 0.45);
 }
 
-/*                                                                                  Animations start ->>>
+/*                                     Animations start ->>>
 */
 
 .element-hover-animation:hover {
@@ -112,7 +112,7 @@ header {
     transform-origin: center center;
 }
 
-/*                                                                                  Burgercraft Glow start ->>>
+/*                                     Burgercraft Glow start ->>>
 */
 
 .glow-animation-big {
@@ -124,13 +124,13 @@ header {
     animation: 5s ease-in-out --glow-animation-small infinite;
 }
 
-/*                                                                                  Burgercraft Glow end <<<-
+/*                                     Burgercraft Glow end <<<-
 */
 
-/*                                                                                  Animations end <<<-
+/*                                     Animations end <<<-
 */
 
-/*                                                                                  Dimensions start ->>>
+/*                                     Dimensions start ->>>
 */
 
 .width-100 {
@@ -176,10 +176,10 @@ header {
     width: calc(var(--basic-width) * 4)
 }
 
-/*                                                                                  Dimensions end <<<-
+/*                                     Dimensions end <<<-
 */
 
-/*                                                                                  Display start ->>>
+/*                                     Display start ->>>
 */
 
 .display-block {
@@ -192,10 +192,10 @@ header {
     display: grid;
 }
 
-/*                                                                                  Display end <<<-
+/*                                     Display end <<<-
 */
 
-/*                                                                                  Flex start ->>>
+/*                                     Flex start ->>>
 */
 
 .justify-content-center {
@@ -221,10 +221,10 @@ header {
     gap: calc(var(--basic-gap) * 3);
 }
 
-/*                                                                                  Flex end <<<-
+/*                                     Flex end <<<-
 */
 
-/*                                                                                  Position start ->>>
+/*                                     Position start ->>>
 */
 
 .position-absolute {
@@ -237,10 +237,10 @@ header {
     position: fixed;
 }
 
-/*                                                                                  Position end <<<-
+/*                                     Position end <<<-
 */
 
-/*                                                                                  Border start ->>>
+/*                                     Border start ->>>
 */
 
 .border-radius-1 {
@@ -278,10 +278,10 @@ header {
     border: calc(var(--basic-border-size) * 2.5) solid rgb(124 82 221 / 1);
 }
 
-/*                                                                                  Border end <<<-
+/*                                     Border end <<<-
 */
 
-/*                                                                                  Global Things end <<<-
+/*                                     Global Things end <<<-
 */
 
 
@@ -289,7 +289,7 @@ header {
 */
 
 
-/*                                                                                  Burgercraft logo start ->>>
+/*                                     Burgercraft logo start ->>>
 */
 
 .card-burgercraft-fixed__setup {
@@ -407,10 +407,13 @@ header {
     }
 }
 
-/*                                                                                  Burgercraft logo end <<<-
+/*                                     Burgercraft logo end <<<-
 */
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
+/*                                     Log in And Sign in start ->>>
 */
 
 .login-signin-animation {
@@ -444,3 +447,6 @@ header {
         gap: 22%;
     }
 }
+
+/*                                     Log in And Sign in end <<<-
+*/
