@@ -9,6 +9,17 @@
     --burgercraft-border-radius: 30px;
     --element-hover-transition: .4s ease-in-out;
     --element-hover-scale: 1.05;
+    --basic-height: 60px;
+    --basic-width: 180px;
+    --border-basic: 10px;
+    --basic-gap: 10%;
+    --basic-border-size: 10px;
+    --basic-border-radius: 10px;
+    --basic-font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -16,25 +27,66 @@ body {
 }
 
 main {
-    display: flex;
+    display: block;
     height: 500vh;
     cursor: url(pictures/mccursor.svg) 15 15, auto;
     animation-timeline: scroll();
 }
 
+header {
+    top: 0;
+    margin: 0 auto;
+    height: var(--header-height);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
 /*                                                                                  Global Things start ->>>
 */
 
-.element-hover-animation:hover {
-    scale: var(--element-hover-scale);
+.test-background-white {
+    background-color: white;
 }
-.element-hover-animation {
-    transition: var(--element-hover-transition);
+.test-background-black {
+    background-color: black;
+}
+.test-background-red {
+    background-color: red;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.font-source-code-pro {
+    font-family: var(--font-sourceCodePro);
+}
+
+.font-size-1 {
+    font-size: var(--basic-font-size);
+}
+.font-size-2 {
+    font-size: calc(var(--basic-font-size) * 1.5);
+}
+.font-size-3 {
+    font-size: calc(var(--basic-font-size) * 2);
+}
+.font-size-4 {
+    font-size: calc(var(--basic-font-size) * 2.5);
+}
+
+.scroll-fix {
+    left: 7px;
+}
+
+.background-accent {
+    background-color: var(--accent-color);
 }
 
 .element-blur {
-    inset: 0;
-    border-radius: 10px;
     backdrop-filter: blur(1px);
     background: rgb(255 255 255 / 0.2);
 }
@@ -46,6 +98,23 @@ main {
         inset 0 -3px 3px rgb(0 0 0 / 0.45);
 }
 
+/*                                                                                  Animations start ->>>
+*/
+
+.element-hover-animation:hover {
+    scale: var(--element-hover-scale);
+}
+.element-hover-animation {
+    transition: var(--element-hover-transition);
+}
+
+.transform-origin-center-center {
+    transform-origin: center center;
+}
+
+/*                                                                                  Burgercraft Glow start ->>>
+*/
+
 .glow-animation-big {
     box-shadow: 0 0 65px 25px rgb(139 92 246);
     animation: 5s ease-in-out --glow-animation-big infinite;
@@ -55,108 +124,226 @@ main {
     animation: 5s ease-in-out --glow-animation-small infinite;
 }
 
+/*                                                                                  Burgercraft Glow end <<<-
+*/
+
+/*                                                                                  Animations end <<<-
+*/
+
+/*                                                                                  Dimensions start ->>>
+*/
+
+.width-100 {
+    width: 100%;
+}
+.height-100 {
+    height: 100%;
+}
+
+.height-inherit {
+    height: inherit;
+}
+.width-inherit {
+    width: inherit;
+}
+
+.height-1 {
+    height: var(--basic-height);
+}
+.height-2 {
+    height: calc(var(--basic-height) * 2)
+}
+.height-3 {
+    height: calc(var(--basic-height) * 3)
+}
+.height-4 {
+    height: calc(var(--basic-height) * 4)
+}
+.height-1000 {
+    height: 1000px;
+}
+
+.width-1 {
+    width: var(--basic-width);
+}
+.width-2 {
+    width: calc(var(--basic-width) * 2)
+}
+.width-3 {
+    width: calc(var(--basic-width) * 3)
+}
+.width-4 {
+    width: calc(var(--basic-width) * 4)
+}
+
+/*                                                                                  Dimensions end <<<-
+*/
+
+/*                                                                                  Display start ->>>
+*/
+
+.display-block {
+    display: block;
+}
+.display-flex {
+    display: flex;
+}
+.display-grid {
+    display: grid;
+}
+
+/*                                                                                  Display end <<<-
+*/
+
+/*                                                                                  Flex start ->>>
+*/
+
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: var(--basic-gap);
+}
+.gap-2 {
+    gap: calc(var(--basic-gap) * 1.5);
+}
+.gap-3 {
+    gap: calc(var(--basic-gap) * 2);
+}
+.gap-4 {
+    gap: calc(var(--basic-gap) * 2.5);
+}
+.gap-5 {
+    gap: calc(var(--basic-gap) * 3);
+}
+
+/*                                                                                  Flex end <<<-
+*/
+
+/*                                                                                  Position start ->>>
+*/
+
+.position-absolute {
+    position: absolute;
+}
+.position-relative {
+    position: relative;
+}
+.position-fixed {
+    position: fixed;
+}
+
+/*                                                                                  Position end <<<-
+*/
+
+/*                                                                                  Border start ->>>
+*/
+
+.border-radius-1 {
+    border-radius: var(--basic-border-radius);
+}
+.border-radius-2 {
+    border-radius: calc(var(--basic-border-radius) * 1.5);
+}
+.border-radius-3 {
+    border-radius: calc(var(--basic-border-radius) * 2);
+}
+.border-radius-4 {
+    border-radius: calc(var(--basic-border-radius) * 2.5);
+}
+.border-radius-5 {
+    border-radius: calc(var(--basic-border-radius) * 3);
+}
+.border-radius-6 {
+    border-radius: calc(var(--basic-border-radius) * 3.5);
+}
+.border-radius-inherit {
+    border-radius: inherit;
+}
+
+.border-1 {
+    border: var(--basic-border-size) solid rgb(124 82 221 / 1);
+}
+.border-2 {
+    border: calc(var(--basic-border-size) * 1.5) solid rgb(124 82 221 / 1);
+}
+.border-3 {
+    border: calc(var(--basic-border-size) * 2) solid rgb(124 82 221 / 1);
+}
+.border-4 {
+    border: calc(var(--basic-border-size) * 2.5) solid rgb(124 82 221 / 1);
+}
+
+/*                                                                                  Border end <<<-
+*/
+
 /*                                                                                  Global Things end <<<-
 */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
 
 /*                                                                                  Burgercraft logo start ->>>
 */
 
-.burgercraft-logo {
-    display: flex;
-    justify-content: center;
-/*    align-items: center;*/
-    width: 1920px;
-    height: 1080px;
-}
-
 .card-burgercraft-fixed__setup {
-    position: fixed;
-    display: flex;
-    position: fixed;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
     animation: --scroll_burgerlogo-small ease-in-out both;
     animation-timeline: scroll();
-    transform-origin: center center;
 }
 
 .card-burgercraft-hero__setup {
-    display: flex;
     margin: 0 auto;
     margin-top: 400px;
     height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
     width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
     animation: --scroll_burgerlogo-big ease-in-out both;
     animation-timeline: scroll();
-    transform-origin: center center;
 }
 
 .card-burgercraft,
-.card-burgercraft__glow {
-    height: inherit;
-    width: inherit;
+.card-burgercraft__border {
     border-radius: var(--burgercraft-border-radius);
 }
 
 .card-burgercraft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--accent-color);
 }
 
-.card-burgercraft__blur,
-.card-burgercraft__border {
+.card-burgercraft__blur {
     height: var(--burgercraft-height);
     width: var(--burgercraft-width);
 }
 
 .card-burgercraft__blur{
-    position: relative;
+    border-radius: 10px;
 }
 
 .card-burgercraft__border {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--burgercraft-border-size) solid rgb(0 0 0 / 0.3);
-    border-radius: var(--burgercraft-border-radius);
+    border: var(--burgercraft-border-size) solid rgb(0 0 0 / 0.1);
+    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
+    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
 }
-
-/*                                                                                  Burgercraft Glow start ->>>
-*/
-
-.card-burgercraft__glow-big {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    border-radius: var(--burgercraft-border-radius);
-}
-
-.card-burgercraft__glow-small {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    border-radius: var(--burgercraft-border-radius);
-}
-
-.card-burgercraft__glow {
-    position: absolute;
-    border-radius: inherit;
-}
-
-/*                                                                                  Burgercraft Glow end <<<-
-*/
 
 .card-burgercraft__text {
-    position: absolute;
     font-family: var(--font-sourceCodePro);
     font-size: var(--burgercraft-font-size);
 }
 
-/*                                                                                  Burgercraft logo end <<<-
-*/
+.card-burgercraft_glow,
+.card-burgercraft_glow-small,
+.card-burgercraft_glow-big {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
 
 @keyframes --glow-animation-big {
     0% {
@@ -217,5 +404,43 @@ main {
     100% {
         opacity: 1;
         scale: 0.4;
+    }
+}
+
+/*                                                                                  Burgercraft logo end <<<-
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
+.login-signin-animation {
+    animation: --login-signin-animation ease-in-out both;
+    animation-timeline: scroll();
+}
+
+@keyframes --login-signin-animation {
+    0% {
+        opacity: 0;
+        gap: 22%;
+    }
+    18% {
+        opacity: 0;
+        gap: 22%;
+    }
+    22% {
+        opacity: 1;
+        gap: 20%;
+    }
+    30% {
+        opacity: 1;
+        gap: 20%;
+    }
+    34% {
+        opacity: 0;
+        gap: 22%;
+    }
+    100% {
+        opacity: 0;
+        gap: 22%;
     }
 }
