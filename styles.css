@@ -2,28 +2,23 @@
     --font-sourceCodePro: "Source Code Pro", monospace;
     --background-color: rgb(27 27 35);
     --accent-color: rgb(139 92 246);
-    --burgercraft-width: 590px;
-    --burgercraft-height: 120px;
-    --burgercraft-font-size: 80px;
-    --burgercraft-border-size: 20px;
-    --burgercraft-border-radius: 30px;
     --element-hover-transition: .4s ease-in-out;
     --element-hover-scale: 1.05;
     --basic-height: 60px;
     --basic-width: 180px;
-    --border-basic: 10px;
     --basic-gap: 10%;
     --basic-border-size: 10px;
     --basic-border-radius: 10px;
     --basic-font-size: 40px;
 }
 
-* {
-    box-sizing: border-box;
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(188, 5, 5);
 }
 
-body {
-    background-color: var(--background-color);
+* {
+    box-sizing: border-box;
 }
 
 main {
@@ -33,16 +28,13 @@ main {
     animation-timeline: scroll();
 }
 
-header {
-    top: 0;
-    margin: 0 auto;
-    height: var(--header-height);
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 
 /*                                     Global Things start ->>>
+*/
+
+/*                                     Test Things start ->>>
 */
 
 .test-background-white {
@@ -55,11 +47,11 @@ header {
     background-color: red;
 }
 
-.text {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+/*                                     Test Things end <<<-
+*/
+
+/*                                     Text start ->>>
+*/
 
 .font-source-code-pro {
     font-family: var(--font-sourceCodePro);
@@ -69,20 +61,26 @@ header {
     font-size: var(--basic-font-size);
 }
 .font-size-2 {
-    font-size: calc(var(--basic-font-size) * 1.5);
+    font-size: calc(var(--basic-font-size) * 1.25);
 }
 .font-size-3 {
-    font-size: calc(var(--basic-font-size) * 2);
+    font-size: calc(var(--basic-font-size) * 1.5);
 }
 .font-size-4 {
-    font-size: calc(var(--basic-font-size) * 2.5);
+    font-size: calc(var(--basic-font-size) * 1.75);
 }
 
-.scroll-fix {
-    left: 7px;
+/*                                     Text end <<<-
+*/
+
+/*                                     Colors and Customization start ->>>
+*/
+
+.background_background-color {
+    background-color: var(--background-color);
 }
 
-.background-accent {
+.background_accent-color {
     background-color: var(--accent-color);
 }
 
@@ -97,6 +95,9 @@ header {
         inset 0 2px 3px rgb(255 255 255 / 0.35),
         inset 0 -3px 3px rgb(0 0 0 / 0.45);
 }
+
+/*                                     Colors and Customization end <<<-
+*/
 
 /*                                     Animations start ->>>
 */
@@ -198,6 +199,19 @@ header {
 }
 .width-4 {
     width: calc(var(--basic-width) * 4)
+}
+
+.left-0 {
+    left: 0%;
+}
+.right-0 {
+    right: 0%;
+}
+.top-0 {
+    top: 0%;
+}
+.bottom-0 {
+    bottom: 0%;
 }
 
 /*                                     Dimensions end <<<-
@@ -310,144 +324,4 @@ header {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*/
-
-
-/*                                     Burgercraft logo Hero, Fixed start ->>>
-*/
-
-.card-burgercraft-fixed__setup {
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
-    animation: --scroll_burgerlogo-small ease-in-out both;
-    animation-timeline: scroll();
-}
-
-.card-burgercraft-hero__setup {
-    margin: 0 auto;
-    margin-top: 400px;
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
-    animation: --scroll_burgerlogo-big ease-in-out both;
-    animation-timeline: scroll();
-}
-
-.card-burgercraft,
-.card-burgercraft__border {
-    border-radius: var(--burgercraft-border-radius);
-}
-
-.card-burgercraft {
-    background-color: var(--accent-color);
-}
-
-.card-burgercraft__blur {
-    height: var(--burgercraft-height);
-    width: var(--burgercraft-width);
-}
-
-.card-burgercraft__blur{
-    border-radius: 10px;
-}
-
-.card-burgercraft__border {
-    border: var(--burgercraft-border-size) solid rgb(0 0 0 / 0.1);
-    height: calc(var(--burgercraft-height) + var(--burgercraft-border-size) * 2);
-    width: calc(var(--burgercraft-width) + var(--burgercraft-border-size) * 2);
-}
-
-.card-burgercraft__text {
-    font-family: var(--font-sourceCodePro);
-    font-size: var(--burgercraft-font-size);
-}
-
-.card-burgercraft_glow,
-.card-burgercraft_glow-small,
-.card-burgercraft_glow-big {
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-}
-
-
-
-@keyframes --scroll_burgerlogo-big {
-    0% {
-        opacity: 1;
-        scale: 1;
-    }
-    9% {
-        opacity: 0;
-        scale: 0.3;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes --scroll_burgerlogo-small {
-    0% {
-        opacity: 0;
-        scale: 0.3;    
-    }
-    9% {
-        opacity: 0;
-        scale: 0.3;
-    }
-    18% {
-        opacity: 0.9;
-        scale: 0.38;
-    }
-    20% {
-        opacity: 1;
-        scale: 0.4;
-    }
-    100% {
-        opacity: 1;
-        scale: 0.4;
-    }
-}
-
-/*                                     Burgercraft logo end <<<-
-*/
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-*/
-
-/*                                     Log in And Sign in start ->>>
-*/
-
-.login-signin-animation {
-    animation: --login-signin-animation ease-in-out both;
-    animation-timeline: scroll();
-}
-
-@keyframes --login-signin-animation {
-    0% {
-        opacity: 0;
-        gap: 22%;
-    }
-    20% {
-        opacity: 0;
-        gap: 22%;
-    }
-    24% {
-        opacity: 1;
-        gap: 20%;
-    }
-    30% {
-        opacity: 1;
-        gap: 20%;
-    }
-    34% {
-        opacity: 0;
-        gap: 22%;
-    }
-    100% {
-        opacity: 0;
-        gap: 22%;
-    }
-}
-
-/*                                     Log in And Sign in end <<<-
 */
