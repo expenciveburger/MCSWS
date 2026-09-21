@@ -61,13 +61,13 @@ main {
     font-size: var(--basic-font-size);
 }
 .font-size-2 {
-    font-size: calc(var(--basic-font-size) * 1.25);
-}
-.font-size-3 {
     font-size: calc(var(--basic-font-size) * 1.5);
 }
+.font-size-3 {
+    font-size: calc(var(--basic-font-size) * 2);
+}
 .font-size-4 {
-    font-size: calc(var(--basic-font-size) * 1.75);
+    font-size: calc(var(--basic-font-size) * 2.5);
 }
 
 /*                                     Text end <<<-
@@ -176,13 +176,13 @@ main {
     height: var(--basic-height);
 }
 .height-2 {
-    height: calc(var(--basic-height) * 2)
+    height: calc(var(--basic-height) * 1.5)
 }
 .height-3 {
-    height: calc(var(--basic-height) * 3)
+    height: calc(var(--basic-height) * 2)
 }
 .height-4 {
-    height: calc(var(--basic-height) * 4)
+    height: calc(var(--basic-height) * 2.5)
 }
 .height-1000 {
     height: 1000px;
@@ -192,13 +192,13 @@ main {
     width: var(--basic-width);
 }
 .width-2 {
-    width: calc(var(--basic-width) * 2)
+    width: calc(var(--basic-width) * 1.5)
 }
 .width-3 {
-    width: calc(var(--basic-width) * 3)
+    width: calc(var(--basic-width) * 2)
 }
 .width-4 {
-    width: calc(var(--basic-width) * 4)
+    width: calc(var(--basic-width) * 2.5)
 }
 
 .left-0 {
@@ -325,3 +325,7 @@ main {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
+
+.header-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
