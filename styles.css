@@ -124,6 +124,30 @@ header {
     animation: 5s ease-in-out --glow-animation-small infinite;
 }
 
+@keyframes --glow-animation-big {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes --glow-animation-small {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
 /*                                     Burgercraft Glow end <<<-
 */
 
@@ -289,7 +313,7 @@ header {
 */
 
 
-/*                                     Burgercraft logo start ->>>
+/*                                     Burgercraft logo Hero, Fixed start ->>>
 */
 
 .card-burgercraft-fixed__setup {
@@ -345,29 +369,6 @@ header {
     border-radius: inherit;
 }
 
-@keyframes --glow-animation-big {
-    0% {
-        opacity: 100%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes --glow-animation-small {
-    0% {
-        opacity: 0%;
-    }
-    50% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-    }
-}
 
 
 @keyframes --scroll_burgerlogo-big {
@@ -426,11 +427,11 @@ header {
         opacity: 0;
         gap: 22%;
     }
-    18% {
+    20% {
         opacity: 0;
         gap: 22%;
     }
-    22% {
+    24% {
         opacity: 1;
         gap: 20%;
     }
