@@ -23,9 +23,7 @@ html {
 }
 
 main {
-    display: block;
     height: 500vh;
-    cursor: url(pictures/mccursor.svg) 15 15, auto;
     animation-timeline: scroll();
 }
 
@@ -51,6 +49,19 @@ main {
 /*                                     Test Things end <<<-
 */
 
+/*                                     Cursors start ->>>
+*/
+
+.cursor-basic {
+    cursor: url(pictures/mccursor.svg) 15 15, auto;
+}
+.cursor-link {
+    cursor: url(pictures/mccursor-link.svg) 15 15, auto;
+}
+
+/*                                     Cursors end <<<-
+*/
+
 /*                                     Text start ->>>
 */
 
@@ -58,6 +69,9 @@ main {
     font-family: var(--font-sourceCodePro);
 }
 
+.text_font-size-05 {
+    font-size: calc(var(--basic-font-size)*0.7);
+}
 .text_font-size-1 {
     font-size: var(--basic-font-size);
 }
@@ -73,6 +87,10 @@ main {
 
 .text_align-center {
     text-align: center;
+}
+
+.text_color-black {
+    color: black;
 }
 
 /*                                     Text end <<<-
@@ -287,6 +305,12 @@ main {
 }
 .padding-3 {
     padding: 3%
+}
+.padding-4 {
+    padding: 4%;
+}
+.padding-5 {
+    padding: 5%
 }
 
 /*                                     Dimensions end <<<-
