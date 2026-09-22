@@ -1,7 +1,8 @@
 :root {
     --font-sourceCodePro: "Source Code Pro", monospace;
-    --background-color: rgb(27 27 35);
-    --accent-color: rgb(139 92 246);
+    --color-background: rgb(27 27 35);
+    --color-accent: rgb(139 92 246);
+    --color-header: rgb(35 35 45);
     --element-hover-transition: .4s ease-in-out;
     --element-hover-scale: 1.05;
     --basic-height: 60px;
@@ -53,21 +54,25 @@ main {
 /*                                     Text start ->>>
 */
 
-.font-source-code-pro {
+.text_font-source-code-pro {
     font-family: var(--font-sourceCodePro);
 }
 
-.font-size-1 {
+.text_font-size-1 {
     font-size: var(--basic-font-size);
 }
-.font-size-2 {
+.text_font-size-2 {
     font-size: calc(var(--basic-font-size) * 1.5);
 }
-.font-size-3 {
+.text_font-size-3 {
     font-size: calc(var(--basic-font-size) * 2);
 }
-.font-size-4 {
+.text_font-size-4 {
     font-size: calc(var(--basic-font-size) * 2.5);
+}
+
+.text_align-center {
+    text-align: center;
 }
 
 /*                                     Text end <<<-
@@ -76,12 +81,14 @@ main {
 /*                                     Colors and Customization start ->>>
 */
 
-.background_background-color {
-    background-color: var(--background-color);
+.background_color-background {
+    background-color: var(--color-background);
 }
-
-.background_accent-color {
-    background-color: var(--accent-color);
+.background_color-accent {
+    background-color: var(--color-accent);
+}
+.background_color-header {
+    background-color: var(--color-header);
 }
 
 .element-blur {
@@ -176,13 +183,13 @@ main {
     height: var(--basic-height);
 }
 .height-2 {
-    height: calc(var(--basic-height) * 1.5)
+    height: calc(var(--basic-height) * 1.5);
 }
 .height-3 {
-    height: calc(var(--basic-height) * 2)
+    height: calc(var(--basic-height) * 2);
 }
 .height-4 {
-    height: calc(var(--basic-height) * 2.5)
+    height: calc(var(--basic-height) * 2.5);
 }
 .height-1000 {
     height: 1000px;
@@ -192,13 +199,28 @@ main {
     width: var(--basic-width);
 }
 .width-2 {
-    width: calc(var(--basic-width) * 1.5)
+    width: calc(var(--basic-width) * 1.5);
 }
 .width-3 {
-    width: calc(var(--basic-width) * 2)
+    width: calc(var(--basic-width) * 2);
 }
 .width-4 {
-    width: calc(var(--basic-width) * 2.5)
+    width: calc(var(--basic-width) * 2.5);
+}
+.width-5 {
+    width: calc(var(--basic-width) * 3);
+}
+.width-6 {
+    width: calc(var(--basic-width) * 3.5);
+}
+.width-80 {
+    width: 80%;
+}
+.width-70 {
+    width: 70%;
+}
+.width-60 {
+    width: 60%;
 }
 
 .left-0 {
@@ -225,10 +247,10 @@ main {
     top: 0%;
 }
 .top-1 {
-    top: 5%;
+    top: 2%;
 }
 .top-2 {
-    top: 10%;
+    top: 4%;
 }
 
 .bottom-0 {
@@ -258,13 +280,13 @@ main {
     padding: 0;
 }
 .padding-1 {
-    padding: 5%;
+    padding: 1%;
 }
 .padding-2 {
-    padding: 10%;
+    padding: 2%;
 }
 .padding-3 {
-    padding: 15%
+    padding: 3%
 }
 
 /*                                     Dimensions end <<<-
@@ -380,9 +402,5 @@ main {
 */
 
 .header-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.login-signin_grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 32% 36% 32%;
 }
