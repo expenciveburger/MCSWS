@@ -1,0 +1,359 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                             Test Things start
+*/
+
+.test-background-white {
+    background-color: white;
+}
+.test-background-black {
+    background-color: black;
+}
+.test-background-red {
+    background-color: red;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                 Cursors start
+*/
+
+.cursor-basic {
+    cursor: url(pictures/mccursor.svg) 15 15, auto;
+}
+.cursor-link {
+    cursor: url(pictures/mccursor-link.svg) 15 15, auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                    Text start
+*/
+
+.text_font-source-code-pro {
+    font-family: var(--font-sourceCodePro);
+}
+
+.text_font-size-05 {
+    font-size: calc(var(--basic-font-size)*0.7);
+}
+.text_font-size-1 {
+    font-size: var(--basic-font-size);
+}
+.text_font-size-2 {
+    font-size: calc(var(--basic-font-size) * 1.5);
+}
+.text_font-size-3 {
+    font-size: calc(var(--basic-font-size) * 2);
+}
+.text_font-size-4 {
+    font-size: calc(var(--basic-font-size) * 2.5);
+}
+
+.text_align-center {
+    text-align: center;
+}
+
+.text_color-black {
+    color: black;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                Colors and Customization start
+*/
+
+.background_color-background {
+    background-color: var(--color-background);
+}
+.background_color-accent {
+    background-color: var(--color-accent);
+}
+.background_color-header {
+    background-color: var(--color-header);
+}
+
+.element-blur {
+    backdrop-filter: blur(1px);
+    background: rgb(255 255 255 / 0.2);
+}
+
+.cute-box-shadow {
+    box-shadow:
+        0 0 25px rgb(130 90 230 / 0.6),
+        inset 0 2px 3px rgb(255 255 255 / 0.35),
+        inset 0 -3px 3px rgb(0 0 0 / 0.45);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                              Animations start
+*/
+
+.element-hover-animation:hover {
+    scale: var(--element-hover-scale);
+}
+.element-hover-animation {
+    transition: var(--element-hover-transition);
+}
+
+.transform-origin-center-center {
+    transform-origin: center center;
+}
+
+.glow-animation-big {
+    box-shadow: 0 0 65px 25px rgb(139 92 246);
+    animation: 5s ease-in-out --glow-animation-big infinite;
+}
+.glow-animation-small {
+    box-shadow: 0 0 25px 15px rgb(139 92 246);
+    animation: 5s ease-in-out --glow-animation-small infinite;
+}
+
+@keyframes --glow-animation-big {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes --glow-animation-small {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                              Dimensions start
+*/
+
+.width-100 {
+    width: 100%;
+}
+.height-100 {
+    height: 100%;
+}
+
+.height-inherit {
+    height: inherit;
+}
+.width-inherit {
+    width: inherit;
+}
+
+.height-1 {
+    height: var(--basic-height);
+}
+.height-2 {
+    height: calc(var(--basic-height) * 1.5);
+}
+.height-3 {
+    height: calc(var(--basic-height) * 2);
+}
+.height-4 {
+    height: calc(var(--basic-height) * 2.5);
+}
+.height-1000 {
+    height: 1000px;
+}
+
+.width-1 {
+    width: var(--basic-width);
+}
+.width-2 {
+    width: calc(var(--basic-width) * 1.5);
+}
+.width-3 {
+    width: calc(var(--basic-width) * 2);
+}
+.width-4 {
+    width: calc(var(--basic-width) * 2.5);
+}
+.width-5 {
+    width: calc(var(--basic-width) * 3);
+}
+.width-6 {
+    width: calc(var(--basic-width) * 3.5);
+}
+
+.width-80 {
+    width: 80%;
+}
+.width-70 {
+    width: 70%;
+}
+.width-60 {
+    width: 60%;
+}
+
+.left-0 {
+    left: 0%;
+}
+.left-1 {
+    left: 5%;
+}
+.left-2 {
+    left: 10%;
+}
+
+.right-0 {
+    right: 0%;
+}
+.right-1 {
+    right: 5%;
+}
+.right-2 {
+    right: 10%;
+}
+
+.top-0 {
+    top: 0%;
+}
+.top-1 {
+    top: 2%;
+}
+.top-2 {
+    top: 4%;
+}
+
+.bottom-0 {
+    bottom: 0%;
+}
+.bottom-1 {
+    bottom: 5%;
+}
+.bottom-2 {
+    bottom: 10%;
+}
+
+.margin-0 {
+    margin: 0;
+}
+.margin-1 {
+    margin: 5%;
+}
+.margin-2 {
+    margin: 10%;
+}
+.margin-3 {
+    margin: 15%;
+}
+
+.padding-0 {
+    padding: 0;
+}
+.padding-1 {
+    padding: 1%;
+}
+.padding-2 {
+    padding: 2%;
+}
+.padding-3 {
+    padding: 3%
+}
+.padding-4 {
+    padding: 4%;
+}
+.padding-5 {
+    padding: 5%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                 Display start
+*/
+
+.display-block {
+    display: block;
+}
+.display-flex {
+    display: flex;
+}
+.display-grid {
+    display: grid;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                    Flex start
+*/
+
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: var(--basic-gap);
+}
+.gap-2 {
+    gap: calc(var(--basic-gap) * 1.5);
+}
+.gap-3 {
+    gap: calc(var(--basic-gap) * 2);
+}
+.gap-4 {
+    gap: calc(var(--basic-gap) * 2.5);
+}
+.gap-5 {
+    gap: calc(var(--basic-gap) * 3);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                Position start
+*/
+
+.position-absolute {
+    position: absolute;
+}
+.position-relative {
+    position: relative;
+}
+.position-fixed {
+    position: fixed;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                  Border start
+*/
+
+.border-radius-1 {
+    border-radius: var(--basic-border-radius);
+}
+.border-radius-2 {
+    border-radius: calc(var(--basic-border-radius) * 1.5);
+}
+.border-radius-3 {
+    border-radius: calc(var(--basic-border-radius) * 2);
+}
+.border-radius-4 {
+    border-radius: calc(var(--basic-border-radius) * 2.5);
+}
+.border-radius-5 {
+    border-radius: calc(var(--basic-border-radius) * 3);
+}
+.border-radius-6 {
+    border-radius: calc(var(--basic-border-radius) * 3.5);
+}
+.border-radius-inherit {
+    border-radius: inherit;
+}
+
+.border-1 {
+    border: var(--basic-border-size) solid rgb(124 82 221 / 1);
+}
+.border-2 {
+    border: calc(var(--basic-border-size) * 1.5) solid rgb(124 82 221 / 1);
+}
+.border-3 {
+    border: calc(var(--basic-border-size) * 2) solid rgb(124 82 221 / 1);
+}
+.border-4 {
+    border: calc(var(--basic-border-size) * 2.5) solid rgb(124 82 221 / 1);
+}

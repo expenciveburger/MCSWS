@@ -1,0 +1,28 @@
+:root {
+    --font-sourceCodePro: "Source Code Pro", monospace;
+    --color-background: rgb(27 27 35);
+    --color-accent: rgb(139 92 246);
+    --color-header: rgb(35 35 45);
+    --element-hover-transition: .4s ease-in-out;
+    --element-hover-scale: 1.05;
+    --basic-height: 60px;
+    --basic-width: 180px;
+    --basic-gap: 10%;
+    --basic-border-size: 10px;
+    --basic-border-radius: 10px;
+    --basic-font-size: 40px;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(188, 5, 5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 500vh;
+    animation-timeline: scroll();
+}
