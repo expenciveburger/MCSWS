@@ -3,23 +3,25 @@
     <head>
         <title>MCSWS</title>                                                                                                                         <!--   Set webpage title  -->
         <link rel="icon" type="image/x-icon" href="pictures/Untitled.png">                                                                           <!--       Set icon       -->
-        <link rel="stylesheet" href="signinStyles.css">                                                                                                    <!--      Connect CSS     -->
+        <link rel="stylesheet" href="rootStyles.css">                                                                                                <!--      Connect CSS     -->
+        <link rel="stylesheet" href="generalStyles.css">                                                                                             <!--      Connect CSS     -->
+        <link rel="stylesheet" href="signinStyles.css">                                                                                              <!--      Connect CSS     -->
         <link rel="preconnect" href="https://fonts.googleapis.com">                                                              <!-- Connect fonts "Source Code Pro", "Saira" -->      
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                                     <!-- Connect fonts "Source Code Pro", "Saira" --> 
         <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <meta charset="utf-8">                                                                                                                      <!--         Meta          -->
         <meta name="author" content="expenciveburger">                                                                                              <!--         Meta          -->
-        <meta name="description" content="Sign In Page">                                                                                            <!--         Meta          -->
+        <meta name="description" content="Signin Page">                                                                                             <!--         Meta          -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                      <!--         Meta          -->
     </head>
     <body class="background_color-background">
-        <main class="display-block cursor-basic">
+        <main class="width-100 height-100 display-block cursor-basic">
             <header class="width-100 height-2 top-1 left-0 position-fixed">                                                                         <!--     Header start      -->
                 <div class="width-inherit height-inherit display-flex justify-content-center align-items-center position-relative">                 <!--        setup          -->
                     <div class="width-80 height-inherit display-grid header-grid position-relative">                                                <!--         grid          -->
                         <div class="width-100 height-100 display-flex justify-content-center align-items-center position-relative"></div>           <!--        slot 1         -->
                         <div class="width-100 height-100 display-flex justify-content-center align-items-center position-relative">                 <!--        slot 2         -->
-                            <a href="/mainPage.html" class="cursor-link element-hover-animation">                                                   <!--       page lnk        -->
+                            <a href="mainPage.html" class="cursor-link element-hover-animation">                                                    <!--       page lnk        -->
                                 <div class="width-4 height-2 border-radius-3 position-relative">                                                    <!--        setup          -->
                                     <div class="width-inherit height-inherit border-radius-inherit position-absolute background_color-accent"></div><!--   Background color    -->
                                     <div class="width-inherit height-inherit border-radius-inherit position-absolute text_font-source-code-pro text_font-size-2 text_align-center">
@@ -29,28 +31,6 @@
                                     <div class="width-inherit height-inherit border-radius-inherit position-absolute cute-box-shadow"></div>        <!--      Cute shadow      -->
                                 </div>
                             </a>
-                        </div>                                                                                                                      <!--      slot 2 end       -->
-                        <div class="width-100 height-100 display-flex justify-content-center align-items-center position-relative gap-1">           <!--     slot 3 start      -->
-                            <a href="/mainPage.html" class="cursor-link element-hover-animation">                                                   <!--    Sign in start      -->
-                                <div class="width-1 height-1 border-radius-3 position-relative">                                                    <!--        setup          -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute background_color-accent"></div><!--   Background color    -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute text_font-source-code-pro text_font-size-05 text_align-center">
-                                        <div class="padding-5 text_color-black">Sign in</div>                                                       <!--         Text          -->
-                                    </div>                                                                                                          
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute element-blur border-1"></div>  <!--         Blur          -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute cute-box-shadow"></div>        <!--      Cute shadow      -->
-                                </div>
-                            </a>                                                                                                                    <!--     Sign in end       -->
-                            <a href="/mainPage.html" class="cursor-link element-hover-animation">                                                   <!--    Log in start       -->
-                                <div class="width-1 height-1 border-radius-3 position-relative">                                                    <!--        setup          -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute background_color-accent"></div><!--   Background color    -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute text_font-source-code-pro text_font-size-05 text_align-center">
-                                        <div class="padding-5 text_color-black">Log in</div>                                                        <!--         Text          -->
-                                    </div>                                                                                                          
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute element-blur border-1"></div>  <!--         Blur          -->
-                                    <div class="width-inherit height-inherit border-radius-inherit position-absolute cute-box-shadow"></div>        <!--      Cute shadow      -->
-                                </div>
-                            </a>                                                                                                                    <!--      Log in end       -->
                         </div>
                     </div>
                 </div>

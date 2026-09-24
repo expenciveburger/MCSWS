@@ -15,14 +15,8 @@
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgb(188, 5, 5);
 }
 
 * {
     box-sizing: border-box;
-}
-
-main {
-    height: 500vh;
-    animation-timeline: scroll();
 }

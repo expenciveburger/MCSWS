@@ -1,3 +1,8 @@
+main {
+    height: 500vh;
+    animation-timeline: scroll();
+}
+
 .header-grid {
     grid-template-columns: 32% 36% 32%;
 }
