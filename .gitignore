@@ -16,6 +16,8 @@ build/
 *.log
 
 #Dirs
+nginx-1.30.5/
+
 #pictures
 
 # OS files
