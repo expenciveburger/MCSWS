@@ -12,17 +12,18 @@ form {
     height: 950px;
 }
 
+.form-border {
+    border-radius: 10px;
+    border: 3px solid rgb(113, 71, 212);
+}
+
 .inputs {
     width: 75%;
     height: 30px;
-    border: 3px solid rgb(113, 71, 212);
-    border-radius: 10px;
     font-size: 15px;
 }
-
 .submit-button {
     width: 30%;
     height: 15%;
-    border-radius: 10px;
     font-size: 20px;
 }
